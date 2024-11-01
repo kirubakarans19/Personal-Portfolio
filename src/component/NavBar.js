@@ -1,12 +1,12 @@
 import { Navbar as BootstrapNavbar, Container, Nav } from "react-bootstrap";
-import { useEffect, useState } from 'react';
-import logo from '../assets/img/logo.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import { useEffect, useState } from "react";
+import logo from "../assets/img/logo.png";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const CustomNavbar = () => {
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export const CustomNavbar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/kiruba-karan36/">
                 <img src={navIcon1} alt="" />
               </a>
               <a href="#">
@@ -80,7 +80,10 @@ export const CustomNavbar = () => {
             <button
               className="vvd"
               onClick={() =>
-                window.open("https://www.linkedin.com/in/kiruba-karan36/","__blank")
+                window.open(
+                  "https://www.linkedin.com/in/kiruba-karan36/",
+                  "__blank"
+                )
               }
             >
               <span>Let's Connect</span>
